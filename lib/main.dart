@@ -1,23 +1,25 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
           backgroundColor: Colors.black,
           body: Padding(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 10,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 80,
                 ),
                 Row(
@@ -26,7 +28,7 @@ class App extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        Text(
+                        const Text(
                           'Hey, Jenny',
                           style: TextStyle(
                             color: Colors.white,
@@ -45,7 +47,7 @@ class App extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 Text(
@@ -55,10 +57,10 @@ class App extends StatelessWidget {
                     fontSize: 22,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   '\$5 194 382',
                   style: TextStyle(
                     color: Colors.white,
@@ -66,7 +68,7 @@ class App extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -75,7 +77,7 @@ class App extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.amber,
                           borderRadius: BorderRadius.circular(45)),
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.symmetric(
                           vertical: 20,
                           horizontal: 50,
